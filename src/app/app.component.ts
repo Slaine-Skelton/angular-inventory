@@ -6,6 +6,7 @@ import { Product } from './product.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   products: Product[];
 
@@ -30,6 +31,10 @@ export class AppComponent {
     ['Men', 'Accessories', 'Hats'],
     29.99)
     ];
+  }
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product);
   }
       
 }

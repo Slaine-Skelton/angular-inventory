@@ -8,6 +8,5 @@ export class Product {
         public imageUrl: string,
         public department: string[],
         public price: number) {
-
     }
 }
